@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "json-server": "^0.17.1"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "online": "ngrok http 300"
+    }
+}
