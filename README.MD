@@ -17,6 +17,7 @@ a ejecutar por el ESP8266.
 ```
 cd (Ruta del Proyecto)/
 node index.js
+ngrok http --scheme=http 3000 --host-header=localhost:3000
 ```
 
 # Requisitos
