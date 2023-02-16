@@ -1,0 +1,149 @@
+@font-face {
+    font-family: game;
+    src: url('../font/Retro\ Gaming.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: game;
+}
+
+body {
+    background-image: url('../img/background.png');
+}
+
+
+/*POPUP*/
+
+.background {
+    position: absolute;
+    background-color: #ffffffb0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0%;
+    z-index: 9999;
+}
+
+.popup {
+    margin: auto;
+    padding: 2%;
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 1%;
+}
+
+.popup h1,
+p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.popup img {
+    width: 10%;
+    margin: auto;
+}
+
+#close {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 7%;
+    text-decoration: none;
+    color: rgb(121, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#close:hover {
+    color: rgb(199, 5, 5);
+    ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+    padding: 2%;
+    margin: 0%;
+    color: #ffffff;
+}
+
+
+/*BUTTONS */
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button,
+#show {
+    padding: 5%;
+    border: none;
+    margin: 3%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff00;
+}
+
+.button:hover,
+#show:hover {
+    opacity: 0.5;
+}
+
+#inf {
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+}
+
+
+/*Tablet or Ipad*/
+
+@media screen and (max-width:900px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        width: 90%;
+    }
+    .button,
+    #show {
+        padding: 10%;
+        margin: 4%;
+    }
+    .popup {
+        width: 90%;
+        height: 50vh;
+    }
+}
+
+
+/*Iphone or Android*/
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 100%;
+    }
+    .row {
+        width: 100%;
+    }
+    .background {
+        width: 100vw;
+    }
+    .popup {
+        width: 90vw;
+        height: 70vh;
+    }
+}

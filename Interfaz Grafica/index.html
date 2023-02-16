@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Quintero">
+    <title>ESP8266 Platform Controller</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!----Popup-->
+    <div class="background">
+        <div class="popup">
+            <button id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </button>
+            <h1>CONTROLADOR ESP8266</h1>
+            <p>
+                Sistema de Control ESP8266 Desarrollado con el proposito <br> de poder Controlar proyectos de IOT por medio de internet
+            </p>
+            <img src="./assets/img/logo.png" alt="Logo Daniel Quintero">
+            <p>
+                <small>
+                    🌱Semillero Ruta hacia la innovacion
+                    <br>
+                    Tauramena - Casanare
+                    <br>
+                     version 1.2
+                </small>
+            </p>
+        </div>
+    </div>
+
+    <h1 class="title">ESP8266 Online Control</h1>
+
+    <!---Buttons-->
+    <div class="container">
+        <div class="row">
+            <button class="button" id="avanza" style="background-image:url('./assets/img/btnUp.png');"></button>
+        </div>
+        <div class="row">
+            <button class="button" id="izquierda" style="background-image:url('./assets/img/btnLeft.png');"></button>
+            <button id="show" style="background-image:url('./assets/img/btnShow.png');"></button>
+            <button class="button" id="derecha" style="background-image: url(./assets/img/btnRight.png);"></button>
+        </div>
+        <div class="row">
+            <button class="button" id="abajo" style="background-image: url('./assets/img/btnDown.png');"></button>
+        </div>
+        <h1 id="inf">NINGUNA ACCION</h1>
+    </div>
+    <script src="./assets/js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
