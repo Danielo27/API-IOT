@@ -1,6 +1,6 @@
 # API CONTROL PARA IOT
 
-## [Control del Proyecto](#error)
+## [Control del Proyecto](https://danielo27.github.io/API-IOT/Interfaz%20Grafica/)
 
 Esta API se esta desarrollando con el fin de controlar un dispositivo de tipo
 ESP8266, Para dicha razon se estara usando esta API la cual almacenara las 
