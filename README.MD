@@ -1,5 +1,7 @@
 # API CONTROL PARA IOT
 
+## [Control del Proyecto](#error)
+
 Esta API se esta desarrollando con el fin de controlar un dispositivo de tipo
 ESP8266, Para dicha razon se estara usando esta API la cual almacenara las 
 instrucciones a ejecutar por la ESP8266; par ello es necesario que dichos comandos se adapten
@@ -9,15 +11,15 @@ Tambien es necesario configurar el dispositivo con el id del campo de la API que
 las instrucciones al dispostivio de lo contrario el dispositivo retornara un 
 error de tipo 404.
 
-ademas de esto se desarrollo una interfaz en html5 para poder enviar las intrucciones
-a ejecutar por el ESP8266.
+# ScreenShot Interfaz Grafica
+
+![interfaz Grafica](./mobile.png)
 
 # Instrucciones
 
 ```
 cd (Ruta del Proyecto)/
 node index.js
-
 ```
 
 # Requisitos
@@ -35,9 +37,9 @@ node index.js
 # Formas de Ayudar
 
 * Comenta a otros sobre este proyecto 📢
-* Da las gracias públicamente :neckbeard: .
+* Da las gracias públicamente :neckbeard: 
+* Si tienes conocimiento del tema no olvides dar Feedback.
 
 
-### :muscle: Daniel Quintero Henriquez
-
+### 😎 Daniel Quintero Henriquez
 
