@@ -1,9 +1,12 @@
-const apiURL = "http://0afb-190-14-232-218.ngrok.io";
+let apiURL;
 const id = 152356434;
 const object = "carro";
 
 const controlBtn = document.querySelectorAll(".button");
 const info = document.querySelector("#inf");
+
+const url = document.querySelector("#url");
+const btnSave = document.querySelector("#save");
 
 async function setControls(instruction) {
     return fetch(`${apiURL}/${object}/${id}`, {
@@ -16,6 +19,13 @@ async function setControls(instruction) {
         .then((response) => response)
         .catch((err) => console.log(err));
 }
+
+btnSave.addEventListener('click', () => {
+    if (url.value != null) {
+        apiURL = url.value;
+        console.log(url.value);
+    }
+});
 
 function initAction(event) {
     setControls(event['target']['id']);
