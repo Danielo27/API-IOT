@@ -10,6 +10,7 @@ const btnSave = document.querySelector("#save");
 
 async function setControls(instruction) {
     return fetch(`${apiURL}/${object}/${id}`, {
+            mode: 'no-cors',
             method: "PUT",
             headers: {
                 "content-Type": "application/json"
